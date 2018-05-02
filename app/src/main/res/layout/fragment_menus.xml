@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment1"
+    tools:context="com.luisro00005513.hoysifragments.Menus">
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Fragment 1"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        />
+-->
+
+
+    <!-- -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:id="@+id/linearpadre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryLight"
+            >
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:background="@color/colorSecondaryDark"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/name_txtview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="@string/company_text"
+                android:textColor="#fff"
+                />
+            <LinearLayout
+                android:id="@+id/summary_linear"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorSecondary"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/calendar"
+                    android:padding="8dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="@string/summary_text"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accounts_linear"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorSecondaryLight"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/bank"
+                    android:padding="8dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="@string/accounts_text"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/incomes_linear"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorSecondary"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/dollar"
+                    android:padding="8dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="@string/incomes_text"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/expenses_linear"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:background="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorSecondaryLight"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/cart"
+                    android:padding="8dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="@string/expenses_text"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stock_linear"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0dp"
+                android:background="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorSecondary"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/item"
+                    android:padding="8dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="@string/stock"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+-->
+
+</FrameLayout>

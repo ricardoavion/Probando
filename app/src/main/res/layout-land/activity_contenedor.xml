@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/layout_landscape"
+    android:background="@color/colorPrimaryLight"
+    >
+
+
+    <fragment
+        android:layout_margin="4dp"
+        android:id="@+id/landscape1"
+        class="com.luisro00005513.hoysifragments.Menus"
+        android:name="com.luisro00005513.hoysifragments.Menus"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_menus"
+        >
+    </fragment>
+
+    <fragment
+        android:layout_margin="4dp"
+        android:id="@+id/landscape2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.luisro00005513.hoysifragments.Selects"
+        android:name="com.luisro00005513.hoysifragments.Selects"
+        tools:layout="@layout/fragment_selects"
+        >
+    </fragment>
+
+
+
+
+</LinearLayout>
