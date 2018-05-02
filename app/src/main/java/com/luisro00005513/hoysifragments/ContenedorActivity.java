@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class ContenedorActivity extends AppCompatActivity implements Menus.OnFragmentInteractionListener,
-        Selects.OnFragmentInteractionListener,Nexus,View.OnClickListener{
+        Selects.OnFragmentInteractionListener,View.OnClickListener{
 
 
 
@@ -24,6 +24,7 @@ public class ContenedorActivity extends AppCompatActivity implements Menus.OnFra
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contenedor);
         //-------------------------------------
+        //declarando los linearlayouts y diciendoles que al dar click se vayan al metodo onClick
         LinearLayout summary = (LinearLayout) findViewById(R.id.summary_linear);
         summary.setOnClickListener(this);
         LinearLayout accounts = (LinearLayout) findViewById(R.id.accounts_linear);
@@ -46,19 +47,17 @@ public class ContenedorActivity extends AppCompatActivity implements Menus.OnFra
     }
 
 
-    @Override
-    public void OnClickLinear(String mensaje) {
-        Intent intent = new Intent(this, ContenedorActivity2.class);
-
-
-
-    }
-
     //==================switch con todos los botones====================
     @Override
     public void onClick(View v) {
+        //creando fragment transacction para poder manejar al fragmento
         FragmentTransaction fr = getSupportFragmentManager().beginTransaction();
-
+        /*hacemos switch de los ids de los linearLayout, y para cada
+        caso verificar si estamos en modo portrait o en modo landscape
+        Si estamos en portrait mandar a llamar al contenedor2 (activity)
+        y le mandamos un valor en put extra de 1 para que una funcion
+        en el contenedor2 haga un switch de que fragment reemplazar
+        Y si estamos en landscape solo reemplazar el fragment2*/
         switch(v.getId()){
             //--------Summary-----------
             case R.id.summary_linear:
