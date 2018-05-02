@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 
 /**
@@ -19,6 +20,9 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Menus extends Fragment {
+
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -66,6 +70,7 @@ public class Menus extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_menus, container, false);
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -110,5 +115,6 @@ public class Menus extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
 
 }

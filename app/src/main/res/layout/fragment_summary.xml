@@ -2,15 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fragment2"
-    tools:context="com.luisro00005513.hoysifragments.Selects">
+    tools:context="com.luisro00005513.hoysifragments.FragmentSummary">
 
     <TextView
+        android:background="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:text="SUMMARYYYYYYYYYYYYYYYY"
+        android:textSize="20sp"
         android:gravity="center"
-        android:textSize="30sp"
-        android:background="@color/colorPrimaryLight"
         />
 
 </FrameLayout>
