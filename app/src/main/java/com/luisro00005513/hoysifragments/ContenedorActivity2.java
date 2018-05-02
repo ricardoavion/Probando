@@ -3,6 +3,7 @@ package com.luisro00005513.hoysifragments;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 
 public class ContenedorActivity2 extends AppCompatActivity {
 
