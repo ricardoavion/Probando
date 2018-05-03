@@ -4,32 +4,11 @@
     android:layout_height="match_parent"
     tools:context="com.luisro00005513.hoysifragments.FragmentStock">
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        >
-
-        <LinearLayout
-            android:id="@+id/linearpadre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/colorPrimaryLight"
-            >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/stock_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
 
 
-            <TextView
-                android:background="@color/colorAccent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="TOCKKKKKKKKKKKK"
-                android:textSize="20sp"
-                android:gravity="center"
-                />
-
-        </LinearLayout>
-
-    </ScrollView>
 </FrameLayout>
