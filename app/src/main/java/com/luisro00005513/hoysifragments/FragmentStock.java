@@ -8,8 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
 
-public class FragmentStock extends Fragment {
+
+public class FragmentStock extends Fragment{
 
     public FragmentStock() {
         // Required empty public constructor
@@ -19,6 +21,8 @@ public class FragmentStock extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

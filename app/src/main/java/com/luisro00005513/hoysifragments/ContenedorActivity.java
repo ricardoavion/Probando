@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+
 public class ContenedorActivity extends AppCompatActivity implements Menus.OnFragmentInteractionListener,
         Selects.OnFragmentInteractionListener,View.OnClickListener{
 
@@ -36,6 +38,20 @@ public class ContenedorActivity extends AppCompatActivity implements Menus.OnFra
         LinearLayout stock = (LinearLayout) findViewById(R.id.stock_linear);
         stock.setOnClickListener(this);
         //------------------------------
+
+        /*   this.item_code = item_code;
+        this.item_name = item_name;
+        this.item_quntity = item_quntity;
+        this.item_price = item_price;
+        this.item_cost = item_cost;
+        this.item_image = item_image;*/
+
+        //---- Objetos Stock--------
+
+        ArrayList<Item> item_list = new ArrayList<Item>();
+        item_list.add(new Item("I0001", "Chikorita", "1", "$99.99", "50.00", R.drawable.chikorita));
+        item_list.add(new Item("I0002", "ONI", "3", "$14.50". "$7.75", R.drawable.oni));
+        item_list.add(new Item("I0003", "Mastur Ch33f", "10", "$0.99", "0.25", R.drawable.uni));
 
 
 
