@@ -7,6 +7,7 @@ public class Item {
     String item_quntity;
     String item_price;
     String item_cost;
+    int item_image;
 
     public Item(String item_code, String item_name, String item_quntity, String item_price, String item_cost) {
         this.item_code = item_code;
