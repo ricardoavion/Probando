@@ -8,6 +8,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -48,6 +51,12 @@ public class ContenedorActivity extends AppCompatActivity implements Menus.OnFra
         item_list.add(new Item("I0002", "ONI", "3", "$14.50","$7.75", R.drawable.oni));
         item_list.add(new Item("I0003", "Mastur Ch33f", "10", "$0.99", "0.25", R.drawable.uni));
 
+        RecyclerView StockRecycler = (RecyclerView) findViewById(R.id.stock_recycler);
+        StockRecycler.setHasFixedSize(true);
+        LinearLayoutManager stock_layout = new LinearLayoutManager(getApplicationContext());
+        stock_layout.setOrientation(LinearLayoutManager.VERTICAL);
+        StockRecycler.setAdapter(new StockAdapter(item_list));
+        StockRecycler.setLayoutManager(stock_layout);
 
 
     }
