@@ -9,12 +9,15 @@ public class Item {
     String item_cost;
     int item_image;
 
-    public Item(String item_code, String item_name, String item_quntity, String item_price, String item_cost) {
+
+
+    public Item(String item_code, String item_name, String item_quntity, String item_price, String item_cost, int item_image) {
         this.item_code = item_code;
         this.item_name = item_name;
         this.item_quntity = item_quntity;
         this.item_price = item_price;
         this.item_cost = item_cost;
+        this.item_image = item_image;
     }
 
     public void setItem_code(String item_code) {
@@ -55,5 +58,13 @@ public class Item {
 
     public String getItem_cost() {
         return item_cost;
+    }
+
+    public int getItem_image() {
+        return item_image;
+    }
+
+    public void setItem_image(int item_image) {
+        this.item_image = item_image;
     }
 }
